@@ -1,0 +1,26 @@
+title: Travel Creator Economy
+description: Exploring the business of travel blogging and content creation, including monetization, partnerships, audience growth, and the economics behind the travel creator industry.
+url: "https://travelcreatoreconomy.com"
+baseurl: ""
+substack_url: "https://travelcreatoreconomy.substack.com/"
+permalink: /:title/
+future: false
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+collections:
+  topics:
+    output: true
+    permalink: /:name/
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "topics"
+    values:
+      layout: topic

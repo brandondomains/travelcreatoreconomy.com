@@ -1,0 +1,26 @@
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="{{ '/' | relative_url }}" class="brand" aria-label="Travel Creator Economy home">
+      <span class="brand-mark">T</span>
+      <span class="brand-text">
+        <strong>Travel Creator Economy</strong>
+        <small>Travel media, platforms, and business models</small>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/topics/' | relative_url }}">Topics</a>
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a href="{{ site.substack_url }}" class="nav-cta" target="_blank" rel="noopener noreferrer">Read on Substack</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="{{ '/about/' | relative_url }}">About</a>
+    <a href="{{ '/topics/' | relative_url }}">Topics</a>
+    <a href="{{ '/blog/' | relative_url }}">Blog</a>
+    <a href="{{ site.substack_url }}" target="_blank" rel="noopener noreferrer">Read on Substack</a>
+  </div>
+</header>

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="page-hero">
+    <div class="container narrow">
+      <p class="eyebrow">{{ page.date | date: "%B %-d, %Y" }}{% if page.category %} · {{ page.category }}{% endif %}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}<p class="hero-text">{{ page.description }}</p>{% endif %}
+    </div>
+  </header>
+  <section class="section">
+    <div class="container content-wrap post-content">
+      {{ content }}
+    </div>
+  </section>
+</article>
